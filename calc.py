@@ -7,11 +7,40 @@
 name = input("Enter Name: ")
 student_class = int(input("Enter Class: "))
 
-if student_class < 10:
-    print ("Please Try After Some Time")
+if student_class >= 8:
+    section = input("Enter Section: ")
+    print("\nEnter Maximum Marks for each subject:")
+    max_comp = int(float(input("Computer: ")))
+    max_maths = int(float(input("Maths: ")))
+    max_science = int(float(input("Science: ")))
+    max_sst = int(float(input("SST: ")))
+    max_english = int(float(input("English: ")))
+    max_s = int(float(input("Sanskrit: ")))
+    max_h =  int(float(input("Hindi: ")))
+    
+    print("\nEnter Marks You Obtained:")
+    c = int(float(input("comp: ")))
+    maths = int(float(input("Maths: ")))
+    science = int(float(input("Science: ")))
+    sst = int(float(input("SST: ")))
+    english = int(float(input("English: ")))
+    s= int(float(input("Sanskrit: ")))
+    h=  int(float(input("Hindi: ")))
+    
+    # Net Calculations
+    total_max = max_comp + max_maths + max_science + max_sst + max_english + max_s + max_h
+    total_obtained = c + maths + science + sst + english + s + h
+    percentage = (total_obtained / total_max) * 100
+    
+    # Final Output
+    print(f"Name: {name}")
+    print(f"Class: {student_class}")
+    print(f"Section: {section}")
+    print(f"Total Marks: {total_obtained}/{total_max}")
+    print(f"Percentage: {percentage:.2f}%")
 
-elif student_class >= 8:
-    print ("Please Try After Some Time")
+    print('ENDS')
+
 
 else:
     section = input("Enter Section: ")
