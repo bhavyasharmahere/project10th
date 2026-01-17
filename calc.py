@@ -5,24 +5,24 @@
 
 # Student Details
 name = input("Enter Name: ")
-student_class = input("Enter Class: ")
+student_class = int(input("Enter Class: "))
 section = input("Enter Section: ")
 
 print("\nEnter Maximum Marks for each subject:")
-max_ai = float(input("AI: "))
-max_maths = float(input("Maths: "))
-max_science = float(input("Science: "))
-max_sst = float(input("SST: "))
-max_english = float(input("English: "))
-max_lang = float(input("Sanskrit/Hindi: "))
+max_ai = int(float(input("AI: ")))
+max_maths = int(float(input("Maths: ")))
+max_science = int(float(input("Science: ")))
+max_sst = int(float(input("SST: ")))
+max_english = int(float(input("English: ")))
+max_lang = int(float(input("Sanskrit/Hindi: ")))
 
 print("\nEnter Marks Obtained:")
-ai = float(input("AI: "))
-maths = float(input("Maths: "))
-science = float(input("Science: "))
-sst = float(input("SST: "))
-english = float(input("English: "))
-lang = float(input("Sanskrit/Hindi: "))
+ai = int(float(input("AI: ")))
+maths = int(float(input("Maths: ")))
+science = int(float(input("Science: ")))
+sst = int(float(input("SST: ")))
+english = int(float(input("English: ")))
+lang = int(float(input("Sanskrit/Hindi: ")))
 
 # Calculations
 total_max = max_ai + max_maths + max_science + max_sst + max_english + max_lang
