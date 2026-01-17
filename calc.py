@@ -10,7 +10,7 @@ student_class = int(input("Enter Class: "))
 if student_class < 10:
     print ("Please Try After Some Time")
 
-elif student_class => 8:
+elif student_class >= 8:
     print ("Please Try After Some Time")
 
 else:
