@@ -1,16 +1,15 @@
 # Program: Marks Calculator
 # Author: Bhavya Sharma
-
 # Marks Calculator for Exam Result
 
 # Student Details
 name = input("Enter Name: ")
 student_class = int(input("Enter Class: "))
 
-if student_class >= 8:
+if student_class <=8 :
     section = input("Enter Section: ")
     # m Input
-    print("\nEnter mimum Marks for each subject:")
+    print("\nEnter maximum Marks for each subject:")
     m_comp = int(float(input("Computer: ")))
     m_ma = int(float(input("Mathematics: ")))
     m_sc = int(float(input("Science: ")))
@@ -18,7 +17,7 @@ if student_class >= 8:
     m_eng = int(float(input("English: ")))
     m_s = int(float(input("Sanskrit: ")))
     m_h =  int(float(input("Hindi: ")))
-    # Score Input 
+    # Score Input
     print("\nEnter Marks You Obtained:")
     c = int(float(input("Computer: ")))
     ma = int(float(input("Mathematics: ")))
@@ -40,8 +39,8 @@ if student_class >= 8:
 else:
     section = input("Enter Section: ")
     # m Input
-    print("\nEnter mimum Marks for each subject:")
-    m_ai = int(float(input("Artificial Intelligence or IT: ")))
+    print("\nEnter maximum Marks for each subject:")
+    m_ai = int(float(input("AI or IT: ")))
     m_ma = int(float(input("Mathematics: ")))
     m_sc = int(float(input("Science: ")))
     m_ss = int(float(input("Social Studies: ")))
